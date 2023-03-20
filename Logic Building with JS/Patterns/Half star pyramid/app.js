@@ -1,11 +1,11 @@
 var star="*"
 var rows=document.getElementById("input")
-
+var div=document.getElementById("stardiv")
 function create(){
     console.log(rows.value)
 for (var i=1;i<=rows.value;i++){
     for (var j=1;j<=i;j++){
-       document.write(star)
+       document.write="*"
     }
     document.write("<br>")
 }
@@ -16,4 +16,10 @@ for (var i=rows.value;i>=1;i--){
     }
     document.write("<br>")
 }
+ var back=document.createElement("button")
+ back.setAttribute("id","back")
+ back.setAttribute("onclick","back()")
+}
+function back(){
+    
 }
